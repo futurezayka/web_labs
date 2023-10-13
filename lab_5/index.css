@@ -1,0 +1,101 @@
+.task {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+#task1 {
+    display: flex;
+}
+
+
+#task2 {
+    display: flex;
+    width: 60%;
+    background-color: #b1ece3;
+
+}
+
+.user1 {
+    justify-content: flex-start;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.user2 {
+    width: 20%;
+    padding: 0 10px;
+}
+
+#form1 > .form-group > input,
+#form2 > .form-group > input{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.messagesArea {
+    display: block;
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.message {
+    background-color: #1dc0f6;
+    display: block;
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    clear: both;
+}
+
+.messageUser1 {
+    float: left;
+}
+
+.messageUser2 {
+    float: right;
+}
+
+.nameUser1 {
+    text-align: left;
+}
+
+.nameUser2 {
+    text-align: right;
+}
+
+
+.text {
+    overflow-wrap: break-word;
+}
+
+.columnName {
+    width: 10%;
+}
+
+.columnValue {
+    width: 10%;
+}
+
+.columnValue > .row > input {
+    width: 100%;
+}
+
+.row {
+    height: 21px;
+    margin: 10px 0;
+}
+
+p {
+    margin: 0 0;
+}
+
+
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+}

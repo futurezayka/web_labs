@@ -3348,7 +3348,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 .collapse {
     display: none;
-    visibility: hidden
+    visibility: hidden;
 }
 
 .collapse.in {

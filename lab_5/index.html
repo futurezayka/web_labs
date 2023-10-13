@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="task" id="task1">
+    <div class="columnName">
+        <div class="row">
+            <label for="length">Довжина</label>
+        </div>
+        <div class="row">
+            <label for="width">Ширина</label>
+        </div>
+        <div class="row">
+            <p>Периметр</p>
+        </div>
+        <div class="row">
+            <p>Площа</p>
+        </div>
+        <div class="row">
+            <p>Довжина діагоналі</p>
+        </div>
+    </div>
+    <div class="columnValue">
+        <div class="row">
+            <input id="length" type="number">
+        </div>
+        <div class="row">
+            <input id="width" type="number">
+        </div>
+        <div class="row">
+            <p id="perimeter"></p>
+        </div>
+        <div class="row">
+            <p id="area"></p>
+        </div>
+        <div class="row">
+            <p id="diagonal"></p>
+        </div>
+    </div>
+</div>
+
+<div class="task" id="task2">
+    <div class="user1">
+        <form id="form1">
+            <div class="form-group">
+                <label for="message1">Повідомлення user1</label>
+                <input type="text" id="message1">
+            </div>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+    <div class="messagesArea">
+
+    </div>
+    <div class="user2">
+        <form id="form2">
+            <div class="form-group">
+                <label for="message2">Повідомлення user2</label>
+                <input type="text" id="message2">
+            </div>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<div class="task" id="task3">
+    <textarea id="UkrainianInput" rows="7" placeholder="Введіть текст українською"></textarea>
+    <textarea id="transliterationOutput" rows="7" readonly></textarea>
+</div>
+
+<div class="task" id="task4">
+    <div>
+        <form id="form4" method="post">
+            <div class="form-group">
+                <label for="date">Оберіть дату</label>
+                <input type="date" id="date">
+            </div>
+            <button type="submit">Розрахувати</button>
+        </form>
+    </div>
+    <div class="result">
+        <p id="result"></p>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     color: #282828;
     line-height: 26px;
+    height: 100vh;
 }
 
 h1,
@@ -72,7 +73,6 @@ hr {
 
 .btn.btn-primary {
     border-radius: 15px;
-
 }
 
 .btn.btn-primary:hover,
@@ -119,10 +119,30 @@ ul.nostyle i {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #424242;
+    max-height: none;
+    visibility: visible;
 }
 
 .navbar-nav > li > a {
     text-transform: uppercase;
+}
+
+.nav.navbar-nav > li:nth-child(8) {
+    margin-left: 120px;
+}
+
+.nav.navbar-nav > li:nth-child(9) {
+    margin-right: -120px;
+}
+
+@media (max-width: 767px) {
+    .nav.navbar-nav > li:nth-child(8) {
+        margin-left: 0;
+    }
+
+    .nav.navbar-nav > li:nth-child(9) {
+        margin-right: 0;
+    }
 }
 
 @-webkit-keyframes scaleIn {
@@ -471,6 +491,7 @@ ul.nostyle i {
 }
 
 #footer {
+    flex: 0 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
@@ -627,4 +648,321 @@ ul.nostyle i {
     100% {
         transform: rotate(1800deg);
     }
+}
+
+/*end animation*/
+
+.loginForm, .registerForm {
+    padding: 50px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.registerForm form {
+    width: 600px;
+    padding: 50px 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.loginForm > form {
+    max-height: 50vh;
+    width: 600px;
+    padding: 50px 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.loginForm .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group > label {
+    margin-left: 5px;
+    font-size: 15px;
+    color: #282828;
+}
+
+.loginForm .item,
+.registerForm .item,
+.contactsForm .item {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 25px 20px;
+}
+
+@media (max-width: 768px) {
+    .loginForm .item, .registerForm .item {
+        border-radius: 10px;
+        margin-bottom: 25px;
+        padding: 20px 10px;
+    }
+
+    .loginForm > form,
+    .registerForm > form,
+    .contactsForm > form {
+        width: 90%;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+
+    .form-group > label {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+}
+
+select {
+    width: 140px;
+    height: 35px;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #999;
+    background: #eee;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.registerForm {
+    padding: 10px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.registerForm > form {
+    padding: 10px 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.registerForm > form > .btn {
+    padding: 5px 25px;
+    margin-top: 15px;
+}
+
+.registerForm .item {
+    margin-bottom: 10px;
+    padding: 1px 15px;
+}
+
+.registerForm > .form-group > label {
+    margin-left: 5px;
+    font-size: 15px;
+    color: #282828;
+    margin-bottom: 5px;
+}
+
+.registerForm .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts-header {
+    text-align: center;
+}
+
+.contacts-header > ul {
+    list-style: none;
+}
+
+.contacts-form {
+    /*padding: 20px 0;*/
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacts-form > form {
+    width: 600px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.contacts-form > form > .btn {
+    padding: 5px 25px;
+}
+
+.contacts-form > .item {
+    margin-bottom: 10px;
+    padding: 1px 15px;
+}
+
+.contacts-form > form > div > textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contacts-form > form > .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contacts-form > form .form-group > label {
+    margin-left: 5px;
+    font-size: 15px;
+    color: #282828;
+    margin-bottom: 5px;
+}
+
+.FAQ, .loginForm, .registerForm, .dataTable, .contacts {
+    flex: 1 0 auto;
+}
+
+.FAQ > ol {
+    margin: 3% 3%;
+}
+
+.FAQ > ol > li {
+    margin: 1% 1%;
+}
+
+.FAQ > .container > .title {
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+.FAQ > .container > .title {
+    text-align: center;
+}
+
+.FAQ > .container > ol,
+.FAQ > .container > ol > li {
+    padding-top: 15px;
+}
+
+#homeFaq, #homeLogin, #homeRegister, #dataTableHome, #contactsHome{
+    padding-top: 100px;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #282828;
+    line-height: 26px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.resp-tab {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    border-radius: 10px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+
+.resp-tab th, .resp-tab td {
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    border: 1px solid #222222;
+    vertical-align: top;
+}
+
+.resp-tab th {
+    color: #FFF;
+    background: #337AB7;
+    font-weight: bold;
+    border: 1px solid #222222;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.resp-tab tr:nth-child(even) {
+    background: #edf7ff;
+}
+
+.resp-tab td span {
+    background: #337AB7;
+    color: #FFF;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .resp-tab thead {
+        display: none;
+    }
+
+    .resp-tab th, .resp-tab td {
+        text-align: left;
+        padding: 20px 10px;
+    }
+
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+
+    .resp-tab td span {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .resp-tab td {
+        width: 100%;
+    }
+}
+
+a i.fa {
+    font-size: 17px;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+a i.fa:hover {
+    color: #007bff;
 }
